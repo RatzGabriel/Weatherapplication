@@ -8,10 +8,34 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="conatainer1"><button>Light Rain</button></div>
-    <div class="container2"><button>City</button><button>Submit</button></div>
-    <div class="container3"><button>35 Grad</button></div>
-    <div class="container4"><button>Dark Mode</button></div>
+    <div class="conatainer1">
+      <img
+        id="symbol"
+        src="http://openweathermap.org/img/wn/04d@2x.png"
+        alt=""
+      />
+      <p id="desc"></p>
+      <p id="sunrise"></p>
+    </div>
+    <div class="container2">
+      <form action="">
+        <label for="searchCity">Please enter the City:</label>
+        <input
+          id="searchCity"
+          name="searchCity"
+          type="text"
+          placeholder="Vienna"
+        />
+      </form>
+      <button id="submit-city">Submit City</button>
+      <button id="switch">switch Celsius Fahrenheit</button>
+    </div>
+    <div class="container3">
+      <p id="temp"></p>
+    </div>
+    <div class="container4">
+      <button>Dark Mode</button>
+    </div>
 
     <script src="app.js"></script>
   </body>
